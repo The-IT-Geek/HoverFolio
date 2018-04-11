@@ -1,7 +1,8 @@
 {
-  "name": "parcel-sandbox",
+  "name": "hoverfolio",
   "version": "1.0.0",
-  "description": "Simple Parcel Sandbox",
+  "description":
+    "My portfolio that uses hover functions to display information about my projects.",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
@@ -10,5 +11,6 @@
   "dependencies": {},
   "devDependencies": {
     "parcel-bundler": "^1.6.1"
-  }
+  },
+  "keywords": []
 }
