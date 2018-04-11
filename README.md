@@ -1,2 +1,0 @@
-# HoverFolio
-Created with CodeSandbox
