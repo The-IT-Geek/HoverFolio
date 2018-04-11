@@ -10,6 +10,38 @@
 	body{
 		background-color:#7FDBFF;
 	}
+	.img_wrap{
+		position:relative;
+		height:auto;
+		width:auto;
+	}
+	.img_description_layer{
+		position:absolute;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		background: rgba(255,0,64,0.6);
+		color:#fff;
+		visibility:hidden;
+		opacity:0;
+		display:flex;
+		align-items:center;
+		justify-context:center;
+		transition:opacity .2s, visibility .2s;
+	}
+	.img_wrap:hover .img_description_layer{
+		visibility:visible;
+		opacity:1;
+	}
+	.img_description{
+		transition:.2s;
+		transform: translateY(1em);
+		margin:0 auto;
+	}
+	.img_wrap:hover .img_description{
+		transform: translateY(0);
+	}
 </style>
 <body>
 	<div id="app"></div>
@@ -18,51 +50,75 @@
 	<h2>Portfolio</h2>
 	<div class="container">
 		<div class="row">
+			
 			<div class="col-md-6 col-xs-12">
-				<div class="thumbnail">
+				<div class="thumbnail img_wrap">
+					<img src="https://github.com/The-IT-Geek/jQuery-Calculator/blob/master/Slide1.PNG?raw=true" alt="Coming Soon" class='img_img'>
+					<div class='caption'>
+						<p>jQuery Calculator</p>
+					</div>
+					<div class='img_description_layer'>
+						<p class='img_description'>This is a description</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-6 col-xs-12">
+				<div class="thumbnail img_wrap">
+					<img src="https://github.com/The-IT-Geek/Openweather-API/blob/master/Slide1.PNG?raw=true" alt="Coming Soon" class='img_img'>
+					<div class='caption'>
+						<p>Openweather API</p>
+					</div>
+					<div class="img_description_layer">
+						<p class='img_description'>This is a description</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-xs-12">
+				<div class="thumbnail img_wrap">
 					<img src="http://www.dfgfashion.com/wp-content/uploads/coming-soon-72dpi.jpg" alt="Coming Soon">
 					<div class="caption">
 						<h6>Coming Soon...</h6>
 					</div>
+					<div class='img_description_layer'>
+						<p class='img_description'>This is a description</p>	
+					</div>	
 				</div>
 			</div>
+			
 			<div class="col-md-6 col-xs-12">
-				<div class="thumbnail">
+				<div class="thumbnail img_wrap">
 					<img src="http://www.dfgfashion.com/wp-content/uploads/coming-soon-72dpi.jpg" alt="Coming Soon">
 					<div class="caption">
 						<h6>Coming Soon...</h6>
 					</div>
+					<div class='img_description_layer'>
+						<p class='img_description'>This is a description</p>	
+					</div>	
 				</div>
 			</div>
+
 			<div class="col-md-6 col-xs-12">
-				<div class="thumbnail">
+				<div class="thumbnail img_wrap">
 					<img src="http://www.dfgfashion.com/wp-content/uploads/coming-soon-72dpi.jpg" alt="Coming Soon">
 					<div class="caption">
 						<h6>Coming Soon...</h6>
 					</div>
+					<div class='img_description_layer'>
+						<p class='img_description'>This is a description</p>
+					</div>
 				</div>
 			</div>
+
 			<div class="col-md-6 col-xs-12">
-				<div class="thumbnail">
+				<div class="thumbnail img_wrap">
 					<img src="http://www.dfgfashion.com/wp-content/uploads/coming-soon-72dpi.jpg" alt="Coming Soon">
 					<div class="caption">
 						<h6>Coming Soon...</h6>
 					</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-xs-12">
-				<div class="thumbnail">
-					<img src="http://www.dfgfashion.com/wp-content/uploads/coming-soon-72dpi.jpg" alt="Coming Soon">
-					<div class="caption">
-						<h6>Coming Soon...</h6>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-xs-12">
-				<div class="thumbnail">
-					<img src="http://www.dfgfashion.com/wp-content/uploads/coming-soon-72dpi.jpg" alt="Coming Soon">
-					<div class="caption">
-						<h6>Coming Soon...</h6>
+					<div class='img_description_layer'>
+						<p class='img_description'>This is a description</p>
 					</div>
 				</div>
 			</div>
